@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.indream.entity.SimpleUser" table="SimpleUser" >
+		<id name="id" type="int">
+			<column name="serial_no" />
+			<generator class="increment" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="mobile" type="java.lang.String">
+			<column name="mobile" />
+		</property>
+
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+	</class>
+</hibernate-mapping>
